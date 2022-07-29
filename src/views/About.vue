@@ -2,11 +2,12 @@
   <div class="about">
     <h1>This is an about page</h1>
     <button @click="aaa">+1</button>
+    <h1>{{ getCount }}</h1>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+// import { mapState } from 'vuex'
 
 export default {
   name: "App",
@@ -21,18 +22,14 @@ export default {
       console.log(this.$store.state.count);
     },
   },
-  computed: mapState({
-    // 箭头函数可使代码更简练
-    count: state => state.count,
-    countPlusLocalState(state) {
-      return state.count + this.localCount
+  computed: {
+    getCount() {
+      return this.$store.getters.getCount
     }
-  })
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  color: red;
-}
+
 </style>
