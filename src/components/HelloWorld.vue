@@ -14,7 +14,7 @@
       </li>
       <li>
         <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank"
-          rel="noopener">routerr</a>
+          rel="noopener">routerrr</a>
       </li>
       <li>
         <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank"
